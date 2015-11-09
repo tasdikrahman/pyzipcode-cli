@@ -2,10 +2,10 @@
 r"""
 Usage:
   core.py (ls | list)  
-  core.py (-h | --help)
-  core.py --c=COUNTRY --p=PINCODE 
-  core.py --p=pincode
+  core.py --p=PINCODE --c=COUNTRY     
+  core.py --p=PINCODE                   ## default --c: IN
   core.py --version
+  core.py (-h | --help)
 Options:
   -h --help     Show this screen
   -v --version  Show version  
@@ -33,11 +33,20 @@ def print_country_codes():
         print('{key}      :  {key_value}'.format(key=k, key_value=v))
 
 
-def get_data(country_code, pincode):
+def get_data():
     '''
-    makes requests to the ziptest api 
-    in the form of http://zip.getziptastic.com/v2/{country_code}/{pincode}
+    makes requests to the ziptest api in 
+    the form of http://zip.getziptastic.com/v2/{country_code}/{pincode} 
     '''
+    pass
+
+
+def get_data_IN():
+    '''
+    If no country code is provided then the default country code is taken as "IN"
+    requests will be made in the form of http://zip.getziptastic.com/v2/IN/{pincode} 
+    '''
+    pass
 
 
 def main():
@@ -49,9 +58,16 @@ def main():
         print("Country : Country code")
         print("======= : ============")
         print_country_codes()
+
+    elif arguments['--p'] and arguments['--c']:
+        get_data()
+
+    elif arguments['--p']:
+        get_data_IN()
     
     elif arguments['--version'] or arguments['-v']:
         print(__version__)
+    
     else:
         print(__doc__)
 
