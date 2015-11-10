@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 r"""
 Usage:
-  pyzipcode.py (ls | list)
-  pyzipcode.py --p=PINCODE --c=COUNTRYCODE     
-  pyzipcode.py --p=PINCODE 
-  pyzipcode.py --version
-  pyzipcode.py (-h | --help)
+  pyzipcode (ls | list)
+  pyzipcode --p=PINCODE --c=COUNTRYCODE     
+  pyzipcode --p=PINCODE 
+  pyzipcode --version
+  pyzipcode (-h | --help)
 Options:
   -h --help     Show this screen
   -v --version  Show version  
@@ -17,11 +17,11 @@ import os
 import json
 import requests
 
-__version__ = '0.0.1'
+__version__ = '0.0.5'
 
-country_file = 'countries.json' 
-directory = os.path.dirname(os.path.abspath(__file__))
-json_location = os.path.join(directory, country_file)
+# country_file = 'countries.json' 
+# directory = os.path.dirname(os.path.abspath(__file__))
+# json_location = os.path.join(directory, country_file)
 
 arguments = docopt(__doc__, version=__version__)
 
