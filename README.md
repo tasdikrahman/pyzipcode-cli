@@ -1,6 +1,6 @@
-##pyzippy
+##pyzipcode-cli
 
-pyzippy is a thin wrapper around getziptastic's API v2
+pyzipcode-cli is a thin wrapper around getziptastic's API v2
 
 ##Demo
 
@@ -20,7 +20,7 @@ pyzippy is a thin wrapper around getziptastic's API v2
 
 ```bash
 $ git clone <link>
-$ cd pyzippy
+$ cd pyzipcode-cli
 $ python setup.py install
 ```
 
@@ -31,37 +31,37 @@ Adding pip support soon
 ##Usage
 
 ```bash
-$ pyzippy --p=248001 --c=IN
+$ pyzipcode-cli --p=248001 --c=IN
 {'county': 'Dehradun', 'country': 'IN', 'postal_code': '248001', 'state_short': '39', 'city': 'Kanwali', 'state': 'Uttarakhand'}
 ```
 
-If you don't specify the option `--c`, country code will default as `IN` and `pyzippy` will try to search for the particular zipcode in `India`
+If you don't specify the option `--c`, country code will default as `IN` and `pyzipcode-cli` will try to search for the particular zipcode in `India`
 
 ```bash
-$ pyzippy --p=603203 
+$ pyzipcode-cli --p=603203 
 {'postal_code': '603203', 'city': 'Kavanur', 'state': 'Tamil Nadu', 'county': 'Kanchipuram', 'state_short': '25', 'country': 'IN'}
 ```
 
 ```bash
-$ pyzippy --p=48867 --c=US
+$ pyzipcode-cli --p=48867 --c=US
 {'county': 'Shiawassee', 'city': 'Owosso', 'country': 'US', 'postal_code': '48867', 'state': 'Michigan', 'state_short': 'MI'}
 ```
 
 ####Get list of all countries with their country codes
 
-`$ pyzippy ls`
+`$ pyzipcode-cli ls`
 
 You can search for a country by piping it 
 
 ```bash
-$ pyzippy ls | grep  grep India
+$ pyzipcode-cli ls | grep  grep India
 IN      :  India
 IO      :  British Indian Ocean Territory
 ```
 ####Version
 
 ```bash
-$ pyzippy -v
+$ pyzipcode-cli -v
 0.0.1
 $
 ```
@@ -69,7 +69,7 @@ $
 ####Help
 
 ```bash
-$ pyzippy --help
+$ pyzipcode-cli --help
 Usage:
   pyzip.py (ls | list)
   pyzip.py --p=PINCODE --c=COUNTRYCODE     

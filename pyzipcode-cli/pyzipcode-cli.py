@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 r"""
 Usage:
-  pyzip.py (ls | list)
-  pyzip.py --p=PINCODE --c=COUNTRYCODE     
-  pyzip.py --p=PINCODE 
-  pyzip.py --version
-  pyzip.py (-h | --help)
+  pyzipcode.py (ls | list)
+  pyzipcode.py --p=PINCODE --c=COUNTRYCODE     
+  pyzipcode.py --p=PINCODE 
+  pyzipcode.py --version
+  pyzipcode.py (-h | --help)
 Options:
   -h --help     Show this screen
   -v --version  Show version  
@@ -63,7 +63,7 @@ def get_data_IN():
     make_request(url)
 
 def main():
-    '''pyzip is a simple API for Ziptest API v2. For more, do "pyzip --help"'''
+    '''pyzipcode is a simple API for Ziptest API v2. For more, do "pyzipcode --help"'''
 
     if arguments['ls'] or arguments['list']:
         print("Country : Country code")
