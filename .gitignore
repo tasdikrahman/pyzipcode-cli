@@ -1,3 +1,1 @@
-test_data/*
-src/__pycache__/*
-next_feature.md
+dist/*
