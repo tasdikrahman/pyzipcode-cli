@@ -2,8 +2,8 @@
 r"""
 Usage:
   core.py (ls | list)  
-  core.py --p=PINCODE --c=COUNTRY     
-  core.py --p=PINCODE                   ## default --c: IN
+  core.py --p=PINCODE --c=COUNTRYCODE     
+  core.py --p=PINCODE 
   core.py --version
   core.py (-h | --help)
 Options:
@@ -21,7 +21,7 @@ __version__ = '0.0.1'
 
 root_dir = os.getcwd()
 country_file = 'countries.json' 
-
+arguments = docopt(__doc__, version=__version__)
 
 with open('countries.json', 'r') as json_file:
     countries = json.loads(json_file.read())
@@ -38,7 +38,9 @@ def get_data():
     makes requests to the ziptest api in 
     the form of http://zip.getziptastic.com/v2/{country_code}/{pincode} 
     '''
-    pass
+    pincode = int(arguments['--p'])
+    country_code = arguments['--c']
+    # print('pincode : "{p}" and country_code : "{c}" '.format(p=pincode, c=country_code))
 
 
 def get_data_IN():
@@ -46,13 +48,14 @@ def get_data_IN():
     If no country code is provided then the default country code is taken as "IN"
     requests will be made in the form of http://zip.getziptastic.com/v2/IN/{pincode} 
     '''
-    pass
-
+    pincode = int(arguments['--p'])
+    # print('pincode : "{p}" '.format(p=pincode))
+    
 
 def main():
     '''zipit is a simple API for Ziptest API v2. For more, do "zipit --help"'''
     
-    arguments = docopt(__doc__, version=__version__)
+    # arguments = docopt(__doc__, version=__version__)
 
     if arguments['ls'] or arguments['list']:
         print("Country : Country code")
