@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 r"""
 Usage:
-  zipit.py (ls | list)  
-  zipit.py --p=PINCODE --c=COUNTRYCODE     
-  zipit.py --p=PINCODE 
-  zipit.py --version
-  zipit.py (-h | --help)
+  pyzip.py (ls | list)
+  pyzip.py --p=PINCODE --c=COUNTRYCODE     
+  pyzip.py --p=PINCODE 
+  pyzip.py --version
+  pyzip.py (-h | --help)
 Options:
   -h --help     Show this screen
   -v --version  Show version  
@@ -17,14 +17,15 @@ import os
 import json
 import requests
 
-
 __version__ = '0.0.1'
 
-root_dir = os.getcwd()
 country_file = 'countries.json' 
+directory = os.path.dirname(os.path.abspath(__file__))
+json_location = os.path.join(directory, country_file)
+
 arguments = docopt(__doc__, version=__version__)
 
-with open('countries.json', 'r') as json_file:
+with open(json_location, 'r') as json_file:
     countries = json.loads(json_file.read())
 
 def print_country_codes():
@@ -34,6 +35,13 @@ def print_country_codes():
         print('{key}      :  {key_value}'.format(key=k, key_value=v))
 
 
+def make_request(url):
+    response = requests.get(url)
+    if response.status_code == 200:
+        print(response.json())
+    else:
+        print('something bad happened!')
+
 def get_data():
     '''
     makes requests to the ziptest api in 
@@ -41,14 +49,9 @@ def get_data():
     '''
     pincode = int(arguments['--p'])
     country_code = arguments['--c']
+    ## make the requests
     url = 'http://zip.getziptastic.com/v2/{c}/{p}'.format(c=country_code, p=pincode)
-    ## making the request
-    response = requests.get(url)
-    if response.status_code == 200:     ## if everything is OK
-        return response.json()
-    else: 
-        print('Something bad happened!')
-
+    make_request(url)
 
 def get_data_IN():
     '''
@@ -57,17 +60,10 @@ def get_data_IN():
     '''
     pincode = int(arguments['--p'])
     url = 'http://zip.getziptastic.com/v2/IN/{p}'.format(p=pincode)
-    ## making the request
-    response = requests.get(url)
-    if response.status_code == 200:
-        return response.json()
-    else:
-        print('Something very bad happened')
+    make_request(url)
 
 def main():
-    '''zipit is a simple API for Ziptest API v2. For more, do "zipit --help"'''
-    
-    # arguments = docopt(__doc__, version=__version__)
+    '''pyzip is a simple API for Ziptest API v2. For more, do "pyzip --help"'''
 
     if arguments['ls'] or arguments['list']:
         print("Country : Country code")
