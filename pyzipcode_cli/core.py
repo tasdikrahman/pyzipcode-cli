@@ -17,11 +17,11 @@ import os
 import json
 import requests
 
-__version__ = '0.0.5'
+__version__ = '0.0.6'
 
-# country_file = 'countries.json' 
-# directory = os.path.dirname(os.path.abspath(__file__))
-# json_location = os.path.join(directory, country_file)
+country_file = 'countries.json' 
+directory = os.path.dirname(os.path.abspath(__file__))
+json_location = os.path.join(directory, country_file)
 
 arguments = docopt(__doc__, version=__version__)
 
