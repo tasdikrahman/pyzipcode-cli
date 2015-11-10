@@ -22,12 +22,13 @@ pyzipcode-cli is a thin wrapper around getziptastic's API v2
 $ git clone https://github.com/prodicus/pyzipcode-cli.git
 $ cd pyzipcode-cli/pyzipcode-cli
 pyzipcode-cli/pyzipcode-cli $ ./pyzipcode-cli
-~~$ python setup.py install~~
 ```
+~~$ python setup.py install~~
 
 ##Option 2: [pip](https://pypi.python.org/pypi/pyzipcode-cli)
 
 ~~`$ pip install pyzipcode-cli`~~
+
 Adding support soon
 
 ##Usage
