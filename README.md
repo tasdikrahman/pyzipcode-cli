@@ -1,6 +1,6 @@
 ##pyzipcode-cli
 
-[![PyPI version](https://badge.fury.io/py/pyzipcode-cli.svg)](https://badge.fury.io/py/pyzipcode-cli) [![License](https://img.shields.io/github/license/prodicus/pyzipcode-cli.png)](https://img.shields.io/github/license/prodicus/pyzipcode-cli.png) 
+[![PyPI version](https://badge.fury.io/py/pyzipcode-cli.svg)](https://badge.fury.io/py/pyzipcode-cli) [![License](https://img.shields.io/github/license/prodicus/pyzipcode-cli.png)](https://img.shields.io/github/license/prodicus/pyzipcode-cli.svg) 
 
 pyzipcode-cli is a thin wrapper around getziptastic's API v2
 
@@ -104,7 +104,3 @@ Feel free to contribute
 ## License :
 
 MIT License [http://prodicus.mit-license.org/](http://prodicus.mit-license.org/) &copy; Tasdik Rahman
-
-
-
-
