@@ -17,9 +17,9 @@ import os
 import json
 import requests
 
-__version__ = '0.0.7'
+__version__ = '0.0.8'
 
-country_file = 'countries.json' 
+country_file = 'countries.py' 
 directory = os.path.dirname(os.path.abspath(__file__))
 json_location = os.path.join(directory, country_file)
 

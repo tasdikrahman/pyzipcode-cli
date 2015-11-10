@@ -6,7 +6,7 @@ except ImportError:
 
 setup(
   name = 'pyzipcode-cli',
-  version = '0.0.7',
+  version = '0.0.8',
   author = 'Tasdik Rahman',
   author_email = 'tasdik95@gmail.com',
   packages = ['pyzipcode_cli'], 
