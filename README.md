@@ -1,5 +1,7 @@
 ##pyzipcode-cli
 
+[![PyPI version](https://badge.fury.io/py/pyzipcode-cli.svg)](https://badge.fury.io/py/pyzipcode-cli)
+
 pyzipcode-cli is a thin wrapper around getziptastic's API v2
 
 ##Demo
@@ -26,6 +28,8 @@ pyzipcode-cli/pyzipcode-cli $ ./pyzipcode-cli
 ~~$ python setup.py install~~
 
 ##Option 2: [pip](https://pypi.python.org/pypi/pyzipcode-cli)
+
+[pypi package link](https://pypi.python.org/pypi/pyzipcode-cli)
 
 ~~`$ pip install pyzipcode-cli`~~
 
