@@ -57,9 +57,11 @@ $ pyzipcode-cli --p=48867 --c=US
 You can search for a country by piping it 
 
 ```bash
-$ pyzipcode-cli ls | grep  grep India
-IN      :  India
-IO      :  British Indian Ocean Territory
+$ ./pyzipcode-cli.py ls | grep kistan
+PK      :  Pakistan
+UZ      :  Uzbekistan
+TJ      :  Tajikistan
+$
 ```
 ####Version
 
