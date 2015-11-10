@@ -1,6 +1,6 @@
 ##pyzipcode-cli
 
-[![PyPI version](https://badge.fury.io/py/pyzipcode-cli.svg)](https://badge.fury.io/py/pyzipcode-cli)
+[![PyPI version](https://badge.fury.io/py/pyzipcode-cli.svg)](https://badge.fury.io/py/pyzipcode-cli) [https://img.shields.io/pypi/prodicus/pyzipcode-cli.svg](https://img.shields.io/pypi/prodicus/pyzipcode-cli.svg) [https://img.shields.io/pypi/prodicus/pyzipcode-cli.svg](https://img.shields.io/pypi/prodicus/pyzipcode-cli.svg)
 
 pyzipcode-cli is a thin wrapper around getziptastic's API v2
 
