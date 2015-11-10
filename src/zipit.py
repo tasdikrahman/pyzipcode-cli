@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 r"""
 Usage:
-  core.py (ls | list)  
-  core.py --p=PINCODE --c=COUNTRYCODE     
-  core.py --p=PINCODE 
-  core.py --version
-  core.py (-h | --help)
+  zipit.py (ls | list)  
+  zipit.py --p=PINCODE --c=COUNTRYCODE     
+  zipit.py --p=PINCODE 
+  zipit.py --version
+  zipit.py (-h | --help)
 Options:
   -h --help     Show this screen
   -v --version  Show version  
@@ -16,6 +16,7 @@ from docopt import docopt
 import os
 import json
 import requests
+
 
 __version__ = '0.0.1'
 
@@ -33,13 +34,6 @@ def print_country_codes():
         print('{key}      :  {key_value}'.format(key=k, key_value=v))
 
 
-def make_request(url):
-    response = requests.get(url)
-    if response.status_code == 200:
-        print(response.json())
-    else:
-        print('something bad happened!')
-
 def get_data():
     '''
     makes requests to the ziptest api in 
@@ -47,9 +41,14 @@ def get_data():
     '''
     pincode = int(arguments['--p'])
     country_code = arguments['--c']
-    ## make the requests
     url = 'http://zip.getziptastic.com/v2/{c}/{p}'.format(c=country_code, p=pincode)
-    make_request(url)
+    ## making the request
+    response = requests.get(url)
+    if response.status_code == 200:     ## if everything is OK
+        return response.json()
+    else: 
+        print('Something bad happened!')
+
 
 def get_data_IN():
     '''
@@ -58,7 +57,12 @@ def get_data_IN():
     '''
     pincode = int(arguments['--p'])
     url = 'http://zip.getziptastic.com/v2/IN/{p}'.format(p=pincode)
-    make_request(url)
+    ## making the request
+    response = requests.get(url)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        print('Something very bad happened')
 
 def main():
     '''zipit is a simple API for Ziptest API v2. For more, do "zipit --help"'''
