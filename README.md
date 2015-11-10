@@ -18,50 +18,47 @@ pyzipcode-cli is a thin wrapper around getziptastic's API v2
 
 ##Installation
 
-##Option 1: 
+##Option 1: installing from source
 
 ```bash
 $ git clone https://github.com/prodicus/pyzipcode-cli.git
 $ cd pyzipcode-cli/pyzipcode-cli
-pyzipcode-cli/pyzipcode-cli $ ./pyzipcode-cli
+$ python setup.py install
 ```
-~~$ python setup.py install~~
 
-##Option 2: [pip](https://pypi.python.org/pypi/pyzipcode-cli)
+##Option 2: installing through [pip](https://pypi.python.org/pypi/pyzipcode-cli)
 
 [pypi package link](https://pypi.python.org/pypi/pyzipcode-cli)
 
-~~`$ pip install pyzipcode-cli`~~
-
-Adding support soon
+`$ pip install pyzipcode-cli`
 
 ##Usage
 
 ```bash
-$ pyzipcode-cli --p=248001 --c=IN
+$ pyzipcode --p=248001 --c=IN
 {'county': 'Dehradun', 'country': 'IN', 'postal_code': '248001', 'state_short': '39', 'city': 'Kanwali', 'state': 'Uttarakhand'}
 ```
 
-If you don't specify the option `--c`, country code will default as `IN` and `pyzipcode-cli` will try to search for the particular zipcode in `India`
+If you don't specify the option `--c`, country code will default as `IN` and `pyzipcode` will try to search for the particular zipcode in `India`
 
 ```bash
-$ pyzipcode-cli --p=603203 
+$ pyzipcode --p=603203 
 {'postal_code': '603203', 'city': 'Kavanur', 'state': 'Tamil Nadu', 'county': 'Kanchipuram', 'state_short': '25', 'country': 'IN'}
 ```
 
 ```bash
-$ pyzipcode-cli --p=48867 --c=US
+$ pyzipcode --p=48867 --c=US
 {'county': 'Shiawassee', 'city': 'Owosso', 'country': 'US', 'postal_code': '48867', 'state': 'Michigan', 'state_short': 'MI'}
 ```
 
 ####Get list of all countries with their country codes
 
-`$ pyzipcode-cli ls`
+`$ pyzipcode ls` 
 
 You can search for a country by piping it 
 
 ```bash
-$ ./pyzipcode-cli.py ls | grep kistan
+$ ./pyzipcode.py ls | grep kistan
 PK      :  Pakistan
 UZ      :  Uzbekistan
 TJ      :  Tajikistan
@@ -70,7 +67,7 @@ $
 ####Version
 
 ```bash
-$ pyzipcode-cli -v
+$ pyzipcode -v
 0.0.1
 $
 ```
@@ -78,7 +75,7 @@ $
 ####Help
 
 ```bash
-$ pyzipcode-cli --help
+$ pyzipcode --help
 Usage:
   pyzip.py (ls | list)
   pyzip.py --p=PINCODE --c=COUNTRYCODE     
@@ -91,6 +88,13 @@ Options:
 $
 ```
 
+##To-do
+
+- [ ] Add support for calculating distance between two cities
+- [ ] adding details like
+    - [ ] Longitude and Latitude
+    - [ ] Time zone
+
 ##Contributing
 
 Feel free to contribute
@@ -100,6 +104,10 @@ Feel free to contribute
 3. Commit your changes (`git commit -am 'Added <xyz> feature'`)
 4. Push to the branch (`git push origin my-new-awesome-feature`)
 5. Create new Pull Request
+
+##Bugs
+
+Please report the bugs at the [issue tracker](https://github.com/prodicus/pyzipcode-cli/issues)
 
 ## License :
 
