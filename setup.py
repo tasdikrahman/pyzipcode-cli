@@ -6,7 +6,7 @@ except ImportError:
 
 setup(
   name = 'pyzipcode-cli',
-  version = '0.0.6',
+  version = '0.0.7',
   author = 'Tasdik Rahman',
   author_email = 'tasdik95@gmail.com',
   packages = ['pyzipcode_cli'], 
@@ -17,8 +17,9 @@ setup(
     "docopt==0.6.1",
     "requests==2.8.1"
   ],
-  include_package_data=True,
-  package_data={'pyzipcode_cli': ['*.json', 'pyzipcode_cli/countries.json']}
+  ## trying it with MANIFEST.in
+  # include_package_data=True,
+  # package_data={'pyzipcode_cli': ['*.json', 'pyzipcode_cli/countries.json']},
   download_url = 'https://github.com/prodicus/pyzipcode-cli/tarball/0.0.3', 
   classifiers = [
       'Intended Audience :: Developers',

@@ -1,0 +1,1 @@
+recursive-include pyzipcode_cli *.json
