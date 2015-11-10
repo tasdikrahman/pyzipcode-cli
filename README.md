@@ -4,7 +4,7 @@ pyzipcode-cli is a thin wrapper around getziptastic's API v2
 
 ##Demo
 
-![gif]()
+![Usage](https://raw.githubusercontent.com/prodicus/pyzipcode-cli/master/usage.gif)
 
 ##Features
 
