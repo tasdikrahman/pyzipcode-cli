@@ -7,7 +7,7 @@ setup(
   author = 'Tasdik Rahman',
   author_email = 'tasdik95@gmail.com',
   url = 'https://github.com/prodicus/pyzipcode-cli', 
-  download_url = 'https://github.com/prodicus/pyzipcode-cli/tarball/0.0.1', 
+  download_url = 'https://github.com/prodicus/pyzipcode-cli/tarball/0.0.2', 
   keywords = ['api', 'geo-location', 'zipcode'], 
   classifiers = [],
 )
