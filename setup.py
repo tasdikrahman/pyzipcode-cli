@@ -1,14 +1,16 @@
 #!/usr/bin/env python
 try:
-  from setuptools import setup
+  import os
+  from setuptools import setup, find_packages
 except ImportError:
   from distutils.core import setup
 
 setup(
   name = 'pyzipcode-cli',
-  version = '0.0.9',
+  version = '0.0.10',
   author = 'Tasdik Rahman',
   author_email = 'tasdik95@gmail.com',
+  long_description=open('README.md').read(),
   packages = ['pyzipcode_cli'], 
   description = "a thin wrapper around getziptastic's API v2",
   url = 'https://github.com/prodicus/pyzipcode-cli', 
@@ -17,10 +19,14 @@ setup(
     "docopt==0.6.1",
     "requests==2.8.1"
   ],
-  ## trying it with MANIFEST.in
-  # include_package_data=True,
-  # package_data={'pyzipcode_cli': ['*.json', 'pyzipcode_cli/countries.json']},
-  download_url = 'https://github.com/prodicus/pyzipcode-cli/tarball/0.0.3', 
+  ### adding package data to it 
+  packages=find_packages(exclude=['contrib', 'docs', 'tests']),
+  package_data={
+      'pyzipcode_cli': ['*.json'],
+  },
+
+  ###
+  download_url = 'https://github.com/prodicus/pyzipcode-cli/tarball/0.0.10', 
   classifiers = [
       'Intended Audience :: Developers',
       'Topic :: Software Development :: Build Tools',
