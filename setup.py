@@ -7,11 +7,11 @@ except ImportError:
 
 setup(
   name = 'pyzipcode-cli',
-  version = '0.0.10',
+  version = '0.0.11',
   author = 'Tasdik Rahman',
   author_email = 'tasdik95@gmail.com',
   long_description=open('README.md').read(),
-  packages = ['pyzipcode_cli'], 
+  # packages = ['pyzipcode_cli'], 
   description = "a thin wrapper around getziptastic's API v2",
   url = 'https://github.com/prodicus/pyzipcode-cli', 
   license = 'MIT',
@@ -26,7 +26,7 @@ setup(
   },
 
   ###
-  download_url = 'https://github.com/prodicus/pyzipcode-cli/tarball/0.0.10', 
+  download_url = 'https://github.com/prodicus/pyzipcode-cli/tarball/0.0.11', 
   classifiers = [
       'Intended Audience :: Developers',
       'Topic :: Software Development :: Build Tools',

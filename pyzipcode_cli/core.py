@@ -17,7 +17,7 @@ import os
 import json
 import requests
 
-__version__ = '0.0.9'
+__version__ = '0.0.11'
 
 
 ## was not able to include countries.json as package data so had to put the json here
