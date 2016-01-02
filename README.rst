@@ -1,5 +1,7 @@
-pyzipcode  |PyPI version| |License| |Python Versions| |Build Status| |Requirements Status|
-==========================================================================================
+Pyzipcode
+=========
+
+|PyPI version| |License| |Python Versions| |Build Status| |Requirements Status|
 
 :Author: Tasdik Rahman
 
@@ -8,21 +10,20 @@ pyzipcode  |PyPI version| |License| |Python Versions| |Build Status| |Requiremen
 
 .. sectnum::
 
-Pyzipcode
-=========
-
 What is it?
 -----------
 
 Extract meta data like 
 
-- ``city``
-- ``state``
-- ``county``
-- ``location``
-  - ``latitude``
-  - ``longitude``
-- Appropriate boundaries for that area
+-  ``city``
+-  ``state``
+-  ``county``
+-  ``location``
+
+  -  ``latitude``
+  -  ``longitude``
+
+-  Appropriate boundaries for that area
 
 by just using the ZIPCODE and Country code
 
@@ -40,7 +41,7 @@ Installation
 ------------
 
 Option 1: installing through `pip <https://pypi.python.org/pypi/pyzipcode-cli>`__ (Suggested way)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `pypi package link <https://pypi.python.org/pypi/pyzipcode-cli>`__
 
@@ -67,7 +68,7 @@ Usage
 -----
 
 ``query_ziptastic_api()``
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: bash
 
@@ -108,6 +109,7 @@ Usage
     }
 
 ``get_data()``
+~~~~~~~~~~~~~~
 
 .. code:: bash
 
