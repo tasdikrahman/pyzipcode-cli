@@ -25,7 +25,7 @@ Extract meta data like
 
 -  Appropriate boundaries for that area
 
-by just using the ``ZIPCODE`` and `Country code <https://github.com/prodicus/pyzipcode-cli/blob/master/assets/countries.json>>`__
+by just using the ``ZIPCODE`` and `Country code <https://github.com/prodicus/pyzipcode-cli/wiki/Countries-ISO-Codes`__
 
 Features
 --------
@@ -34,7 +34,7 @@ Features
 -  Supports all the Country codes specified in the ISO specification i.e
    all **264 countries** where they have a pin code.
 
-   You can find a list of all the country codes at `countries.json <https://github.com/prodicus/pyzipcode-cli/blob/master/assets/countries.json>`__
+   You can find a list of all the country codes at `the Wiki page <https://github.com/prodicus/pyzipcode-cli/wiki/Countries-ISO-Codes`__
 -  Gives ouput in a ``dict`` form or a ``JSON`` format
 -  Fast and easy to use
 
