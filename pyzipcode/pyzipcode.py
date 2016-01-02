@@ -8,7 +8,7 @@ except ImportError:
     import simplejson as json
 
 
-__version__ = '0.1.0'
+__version__ = '0.1.2'
 __author__ = "Tasdik Rahman"
 
 
