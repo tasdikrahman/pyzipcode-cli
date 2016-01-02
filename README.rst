@@ -25,7 +25,7 @@ Extract meta data like
 
 -  Appropriate boundaries for that area
 
-by just using the ``ZIPCODE`` and `Country code <https://github.com/prodicus/pyzipcode-cli/wiki/Countries-ISO-Codes`__
+by just using the ``ZIPCODE`` and `Country code <https://github.com/prodicus/pyzipcode-cli/wiki/Countries-ISO-Codes>`__
 
 Features
 --------
@@ -34,7 +34,7 @@ Features
 -  Supports all the Country codes specified in the ISO specification i.e
    all **264 countries** where they have a pin code.
 
-   You can find a list of all the country codes at `the Wiki page <https://github.com/prodicus/pyzipcode-cli/wiki/Countries-ISO-Codes`__
+   You can find a list of all the country codes at `the Wiki page <https://github.com/prodicus/pyzipcode-cli/wiki/Countries-ISO-Codes>`__
 -  Gives ouput in a ``dict`` form or a ``JSON`` format
 -  Fast and easy to use
 
@@ -69,79 +69,34 @@ Option 2: Installing from source
 Usage
 -----
 
-``query_ziptastic_api()``
-~~~~~~~~~~~~~~~~~~~~~~~~~
+``get()``
+~~~~~~~~~
 
 .. code:: bash
 
-    >>> from pyzipcode import Pyzipcode as pz
-    >>> pz.query_ziptastic_api(603203, "IN")
+    >>> pz.get(603203, "IN", return_json=True)
     {
-      "state_short": "25",
-      "state": "Tamil Nadu",
-      "county": "Kanchipuram",
-      "postal_code": "603203",
-      "city": "Kavanur",
-      "country": "IN"
-    }
-    >>>
-
-``query_google_api()``
-~~~~~~~~~~~~~~~~~~~~~~
-
-.. code:: bash
-
-    >>> pz.query_google_api(603203, "IN")
-    {
-      "location_type": "APPROXIMATE",
       "location": {
-        "lng": 80.0199562,
-        "lat": 12.8336666
+        "lat": 12.8336666,
+        "lng": 80.0199562
       },
+      "city": "Kavanur",
+      "state_short": "25",
+      "county": "Kanchipuram",
+      "state": "Tamil Nadu",
+      "postal_code": "603203",
       "bounds": {
         "northeast": {
-          "lng": 80.0572497,
-          "lat": 12.8769479
+          "lat": 12.8769479,
+          "lng": 80.0572497
         },
         "southwest": {
-          "lng": 79.9504465,
-          "lat": 12.7997355
-        }
-      }
-    }
-
-``get_data()``
-~~~~~~~~~~~~~~
-
-.. code:: bash
-
-    >>> pz.get_data(94305, "US")
-    {
-      "google_maps": {
-        "location_type": "APPROXIMATE",
-        "location": {
-          "lng": -122.1689284,
-          "lat": 37.4135757
-        },
-        "bounds": {
-          "northeast": {
-            "lng": -122.1494501,
-            "lat": 37.44363
-          },
-          "southwest": {
-            "lng": -122.194849,
-            "lat": 37.382743
-          }
+          "lat": 12.7997355,
+          "lng": 79.9504465
         }
       },
-      "ziptastic": {
-        "city": "Stanford",
-        "state": "California",
-        "postal_code": "94305",
-        "state_short": "CA",
-        "county": "Santa Clara",
-        "country": "US"
-      }
+      "location_type": "APPROXIMATE",
+      "country": "IN"
     }
 
 To-do
@@ -160,6 +115,11 @@ Bugs
 
 Please report the bugs at the `issue
 tracker <https://github.com/prodicus/pyzipcode-cli/issues>`__
+
+Known Issues
+------------
+
+-   The zipcodes for Argentina are not working for the release `0.1.3 <https://github.com/prodicus/pyzipcode-cli/releases/tag/v0.1.3>`__ as reported by `DavidVentura <https://github.com/DavidVentura>`__ on issue `#1 <https://github.com/prodicus/pyzipcode-cli/issues/1>`__
 
 License :
 ---------

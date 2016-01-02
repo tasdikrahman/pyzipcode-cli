@@ -1,0 +1,7 @@
+include CONTRIBUTING.rst requirements.txt CHANGELOG.rst LICENSE.txt README.rst tests.py
+recursive-include pyzipcode *
+recursive-exclude assets *
+recursive-exclude pyzipcode *.pyc
+recursive-exclude pyzipcode *.pyo
+recursice-exclude dist *
+recursice-exclude pyzipcode_cli.egg-info *
