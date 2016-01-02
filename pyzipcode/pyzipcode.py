@@ -2,10 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import requests
-try:
-    import json
-except ImportError:
-    import simplejson as json
+import json
 
 
 __version__ = '0.1.3'
