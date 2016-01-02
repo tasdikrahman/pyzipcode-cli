@@ -1,24 +1,16 @@
 #!/usr/bin/env python
-r"""
-Usage:
-  pyzipcode (ls | list)
-  pyzipcode --p=PINCODE --c=COUNTRYCODE     
-  pyzipcode --p=PINCODE 
-  pyzipcode --version
-  pyzipcode (-h | --help)
-Options:
-  -h --help     Show this screen
-  -v --version  Show version  
-"""
 
-
-from docopt import docopt 
 import os
-import json
-import requests
+try:
+    import json
+except ImportError:
+    import simplejson as json
+try:                    ## python 3
+    import urllib.request as urllib
+except ImportError:     ## python 2
+    import urllib2 as urllib
 
-__version__ = '0.0.12'
-
+__version__ = '0.1.0'
 
 ## was not able to include countries.json as package data so had to put the json here
 country_file = 'countries.json' 
@@ -38,13 +30,21 @@ def print_country_codes():
     for k, v in countries.items():
         print('{key}      :  {key_value}'.format(key=k, key_value=v))
 
-
 def make_request(url):
     response = requests.get(url)
     if response.status_code == 200:
         print(response.json())
     else:
         print('something bad happened!')
+
+def get_latitude_longitude(pincode):
+    """
+    Getting the latitude and longitude by querying the Google API with the pincode 
+    and returns the latitude and langitude for that particular place.
+    """
+    BASE_URL = "http://maps.googleapis.com/maps/api/geocode/json?address={pincode}"
+
+
 
 def get_data():
     '''
