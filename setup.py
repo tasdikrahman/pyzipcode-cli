@@ -8,7 +8,7 @@ except ImportError:
 
 setup(
   name = 'pyzipcode-cli',
-  version = '0.1.2',
+  version = '0.1.3',
   author = 'Tasdik Rahman',
   author_email = 'tasdik95@gmail.com',
   description = "a thin wrapper around getziptastic's API v2",
@@ -23,7 +23,7 @@ setup(
   #     'assets': ['*.json'],
   # },
 
-  download_url = 'https://github.com/prodicus/pyzipcode-cli/tarball/0.1.1', 
+  download_url = 'https://github.com/prodicus/pyzipcode-cli/tarball/0.1.3', 
   classifiers = [
       'Intended Audience :: Developers',
       'Topic :: Software Development :: Build Tools',
