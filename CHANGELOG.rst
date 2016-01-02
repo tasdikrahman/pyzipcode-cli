@@ -22,5 +22,6 @@
 -  removed the CLI interface
 
 0.1.1
+=====
 
 -  Removed the ``assets`` folder and moved it to the Modules `WIKI page <https://github.com/prodicus/pyzipcode-cli/wiki/Countries-ISO-Codes>`__
