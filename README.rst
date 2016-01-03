@@ -161,6 +161,11 @@ Bugs
 Please report the bugs at the `issue
 tracker <https://github.com/prodicus/pyzipcode-cli/issues>`__
 
+Known Issues
+------------
+
+-   The zipcodes for Argentina are not working for the release `0.1.3 <https://github.com/prodicus/pyzipcode-cli/releases/tag/v0.1.3>`__ as reported by `DavidVentura <https://github.com/DavidVentura>`__ on issue `#1 <https://github.com/prodicus/pyzipcode-cli/issues/1>`__
+
 License :
 ---------
 
