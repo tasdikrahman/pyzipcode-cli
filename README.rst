@@ -69,7 +69,7 @@ Option 2: Installing from source
 Usage
 -----
 
-.. figure:: http://i.imgur.com/rwSTxH7.gifv
+.. figure:: https://raw.githubusercontent.com/prodicus/pyzipcode-cli/master/assets/pyzip_demo.gif
    :alt: Demp link
 
 ``query_ziptastic_api()``
