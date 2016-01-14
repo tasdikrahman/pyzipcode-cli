@@ -69,6 +69,8 @@ Option 2: Installing from source
 Usage
 -----
 
+![Demo](http://i.imgur.com/rwSTxH7.gifv)
+
 ``query_ziptastic_api()``
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
