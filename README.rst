@@ -69,7 +69,8 @@ Option 2: Installing from source
 Usage
 -----
 
-![Demo](http://i.imgur.com/rwSTxH7.gifv)
+.. figure:: http://i.imgur.com/rwSTxH7.gifv
+   :alt: Demp link
 
 ``query_ziptastic_api()``
 ~~~~~~~~~~~~~~~~~~~~~~~~~
