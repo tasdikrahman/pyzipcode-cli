@@ -43,7 +43,7 @@ class TestModule(unittest.TestCase):
 
     def test_get_valid_pincode(self):
         current_result = pz.get(603203, "IN")
-        expected_result = {'ziptastic': {'state_short': '25', 'state': 'Tamil Nadu', 'city': 'Kavanur', 'county': 'Kanchipuram', 'country': 'IN', 'postal_code': '603203'}, 'google_maps': {'bounds': {'northeast': {'lng': 80.0572497, 'lat': 12.8769479}, 'southwest': {'lng': 79.9504465, 'lat': 12.7997355}}, 'location_type': 'APPROXIMATE', 'location': {'lng': 80.0199562, 'lat': 12.8336666}}}
+        expected_result = {'state_short': '25', 'city': 'Kavanur', 'location': {'lat': 12.8336666, 'lng': 80.0199562}, 'state': 'Tamil Nadu', 'country': 'IN', 'postal_code': '603203', 'bounds': {'northeast': {'lat': 12.8769479, 'lng': 80.0572497}, 'southwest': {'lat': 12.7997355, 'lng': 79.9504465}}, 'county': 'Kanchipuram', 'location_type': 'APPROXIMATE'}
         if sys.version_info[:2] <= (2, 7):
             self.assertItemsEqual(current_result, expected_result)
         else:
