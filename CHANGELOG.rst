@@ -25,3 +25,9 @@
 =====
 
 -  Removed the ``assets`` folder and moved it to the Modules `WIKI page <https://github.com/prodicus/pyzipcode-cli/wiki/Countries-ISO-Codes>`__
+
+0.1.4
+=====
+
+- Changed the name of the method ``get_data()`` to ``get()`` for readility.
+- cleansed the ``json`` data being returned.

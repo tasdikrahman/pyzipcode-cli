@@ -69,66 +69,22 @@ Option 2: Installing from source
 Usage
 -----
 
-.. figure:: https://raw.githubusercontent.com/prodicus/pyzipcode-cli/master/assets/pyzip_demo.gif
-   :alt: Demp link
-
-``query_ziptastic_api()``
-~~~~~~~~~~~~~~~~~~~~~~~~~
+``get()``
+~~~~~~~~~
 
 .. code:: bash
 
-    >>> from pyzipcode import Pyzipcode as pz
-    >>> pz.query_ziptastic_api(603203, "IN")
+    >>> pz.get(603203, "IN", return_json=True)
     {
-      "state_short": "25",
-      "state": "Tamil Nadu",
-      "county": "Kanchipuram",
-      "postal_code": "603203",
-      "city": "Kavanur",
-      "country": "IN"
-    }
-    >>>
-
-``query_google_api()``
-~~~~~~~~~~~~~~~~~~~~~~
-
-.. code:: bash
-
-    >>> pz.query_google_api(603203, "IN")
-    {
-      "location_type": "APPROXIMATE",
-      "location": {
-        "lng": 80.0199562,
-        "lat": 12.8336666
-      },
-      "bounds": {
-        "northeast": {
-          "lng": 80.0572497,
-          "lat": 12.8769479
-        },
-        "southwest": {
-          "lng": 79.9504465,
-          "lat": 12.7997355
-        }
-      }
-    }
-
-``get_data()``
-~~~~~~~~~~~~~~
-
-.. code:: bash
-
-    >>> pz.get_data(94305, "US")
-    {
-      "postal_code": "603203",
-      "county": "Kanchipuram",
-      "state_short": "25",
       "location": {
         "lat": 12.8336666,
         "lng": 80.0199562
       },
+      "city": "Kavanur",
+      "state_short": "25",
+      "county": "Kanchipuram",
       "state": "Tamil Nadu",
-      "location_type": "APPROXIMATE",
+      "postal_code": "603203",
       "bounds": {
         "northeast": {
           "lat": 12.8769479,
@@ -139,7 +95,7 @@ Usage
           "lng": 79.9504465
         }
       },
-      "city": "Kavanur",
+      "location_type": "APPROXIMATE",
       "country": "IN"
     }
 

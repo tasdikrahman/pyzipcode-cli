@@ -71,7 +71,7 @@ class Pyzipcode(object):
 
 
     @staticmethod
-    def get_data(pincode, country_code="IN",return_json=False):
+    def get(pincode, country_code="IN",return_json=False):
         """
         Unifies the JSON data from different API's into a single one
 
