@@ -85,13 +85,14 @@ class Pyzipcode(object):
         data_API_2 = Pyzipcode.query_google_api(pincode)
 
         if data_API_2 is not False and data_API_1 is not False:
-            final_dictionary = { 
-                "ziptastic": data_API_1,
-                "google_maps": data_API_2
-            }
+            # final_dictionary = { 
+            #     "ziptastic": data_API_1,
+            #     "google_maps": data_API_2
+            # }
+            data_API_1.update(data_API_2)   ## merges the two dictionaries
             if return_json == True:
-                return json.dumps(final_dictionary)
+                return json.dumps(data_API_1)
             else:
-                return final_dictionary
+                return data_API_1
         else:
             return False

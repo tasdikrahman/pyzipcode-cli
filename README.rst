@@ -120,31 +120,27 @@ Usage
 
     >>> pz.get_data(94305, "US")
     {
-      "google_maps": {
-        "location_type": "APPROXIMATE",
-        "location": {
-          "lng": -122.1689284,
-          "lat": 37.4135757
+      "postal_code": "603203",
+      "county": "Kanchipuram",
+      "state_short": "25",
+      "location": {
+        "lat": 12.8336666,
+        "lng": 80.0199562
+      },
+      "state": "Tamil Nadu",
+      "location_type": "APPROXIMATE",
+      "bounds": {
+        "northeast": {
+          "lat": 12.8769479,
+          "lng": 80.0572497
         },
-        "bounds": {
-          "northeast": {
-            "lng": -122.1494501,
-            "lat": 37.44363
-          },
-          "southwest": {
-            "lng": -122.194849,
-            "lat": 37.382743
-          }
+        "southwest": {
+          "lat": 12.7997355,
+          "lng": 79.9504465
         }
       },
-      "ziptastic": {
-        "city": "Stanford",
-        "state": "California",
-        "postal_code": "94305",
-        "state_short": "CA",
-        "county": "Santa Clara",
-        "country": "US"
-      }
+      "city": "Kavanur",
+      "country": "IN"
     }
 
 To-do
