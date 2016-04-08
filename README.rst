@@ -74,6 +74,7 @@ Usage
 
 .. code:: bash
 
+    >>> from pyzipcode import Pyzipcode as pz
     >>> pz.get(603203, "IN", return_json=True)
     {
       "location": {
@@ -98,6 +99,33 @@ Usage
       "location_type": "APPROXIMATE",
       "country": "IN"
     }
+
+    >>>
+    >>> pz.get(94305, "US", return_json=True)
+    {
+      "city": "Stanford",
+      "country": "US",
+      "bounds": {
+        "northeast": {
+          "lat": 37.44363,
+          "lng": -122.1494501
+        },
+        "southwest": {
+          "lat": 37.382743,
+          "lng": -122.194849
+        }
+      },
+      "county": "Santa Clara",
+      "state": "California",
+      "state_short": "CA",
+      "postal_code": "94305",
+      "location": {
+        "lat": 37.4135757,
+        "lng": -122.1689284
+      },
+      "location_type": "APPROXIMATE"
+    }
+
 
 To-do
 -----
