@@ -10,9 +10,9 @@ setup(
   name = 'pyzipcode-cli',
   version = '0.1.4',
   author = 'Tasdik Rahman',
-  author_email = 'tasdik95@gmail.com',
+  author_email = 'prodicus@gmail.com',
   description = "a thin wrapper around getziptastic's API v2",
-  url = 'https://github.com/prodicus/pyzipcode-cli', 
+  url = 'https://github.com/tasdikrahman/pyzipcode-cli', 
   license = 'MIT',
   install_requires = [
     "requests==2.9.1"
@@ -23,7 +23,7 @@ setup(
   #     'assets': ['*.json'],
   # },
 
-  download_url = 'https://github.com/prodicus/pyzipcode-cli/tarball/0.1.4', 
+  download_url = 'https://github.com/tasdikrahman/pyzipcode-cli/tarball/0.1.4', 
   classifiers = [
       'Intended Audience :: Developers',
       'Topic :: Software Development :: Build Tools',

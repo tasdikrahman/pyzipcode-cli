@@ -24,7 +24,7 @@
 0.1.3
 =====
 
--  Removed the ``assets`` folder and moved it to the Modules `WIKI page <https://github.com/prodicus/pyzipcode-cli/wiki/Countries-ISO-Codes>`__
+-  Removed the ``assets`` folder and moved it to the Modules `WIKI page <https://github.com/tasdikrahman/pyzipcode-cli/wiki/Countries-ISO-Codes>`__
 
 0.1.4
 =====

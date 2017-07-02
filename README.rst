@@ -25,7 +25,7 @@ Extract meta data like
 
 -  Appropriate boundaries for that area
 
-by just using the ``ZIPCODE`` and `Country code <https://github.com/prodicus/pyzipcode-cli/wiki/Countries-ISO-Codes>`__
+by just using the ``ZIPCODE`` and `Country code <https://github.com/tasdikrahman/pyzipcode-cli/wiki/Countries-ISO-Codes>`__
 
 Features
 --------
@@ -34,7 +34,7 @@ Features
 -  Supports all the Country codes specified in the ISO specification i.e
    all **264 countries** where they have a pin code.
 
-   You can find a list of all the country codes at `the Wiki page <https://github.com/prodicus/pyzipcode-cli/wiki/Countries-ISO-Codes>`__
+   You can find a list of all the country codes at `the Wiki page <https://github.com/tasdikrahman/pyzipcode-cli/wiki/Countries-ISO-Codes>`__
 -  Gives ouput in a ``dict`` form or a ``JSON`` format
 -  Fast and easy to use
 
@@ -61,7 +61,7 @@ Option 2: Installing from source
 
 .. code:: bash
 
-    $ git clone https://github.com/prodicus/pyzipcode-cli.git
+    $ git clone https://github.com/tasdikrahman/pyzipcode-cli.git
     $ cd pyzipcode-cli/
     $ pip install -r requirements.txt
     $ python setup.py install
@@ -136,23 +136,23 @@ To-do
 Contributing
 ------------
 
-Feel free to make a pull request. For that, please refer the `Contributing page <https://github.com/prodicus/pyzipcode-cli/blob/master/CONTRIBUTING.rst>`__ 
+Feel free to make a pull request. For that, please refer the `Contributing page <https://github.com/tasdikrahman/pyzipcode-cli/blob/master/CONTRIBUTING.rst>`__ 
 
 Bugs
 ----
 
 Please report the bugs at the `issue
-tracker <https://github.com/prodicus/pyzipcode-cli/issues>`__
+tracker <https://github.com/tasdikrahman/pyzipcode-cli/issues>`__
 
 Known Issues
 ------------
 
--   The zipcodes for Argentina are not working for the release `0.1.3 <https://github.com/prodicus/pyzipcode-cli/releases/tag/v0.1.3>`__ as reported by `DavidVentura <https://github.com/DavidVentura>`__ on issue `#1 <https://github.com/prodicus/pyzipcode-cli/issues/1>`__
+-   The zipcodes for Argentina are not working for the release `0.1.3 <https://github.com/tasdikrahman/pyzipcode-cli/releases/tag/v0.1.3>`__ as reported by `DavidVentura <https://github.com/DavidVentura>`__ on issue `#1 <https://github.com/tasdikrahman/pyzipcode-cli/issues/1>`__
 
 License :
 ---------
 
-`MIT License <http://prodicus.mit-license.org/>`__ © `Tasdik Rahman <http://prodicus.github.com/>`__
+`MIT License <http://prodicus.mit-license.org/>`__ © `Tasdik Rahman <https://tasdikrahmans.com/>`__
 
 You can find a copy of the License at http://prodicus.mit-license.org/
 
@@ -161,7 +161,7 @@ You can find a copy of the License at http://prodicus.mit-license.org/
 .. |License| image:: https://img.shields.io/pypi/l/pyzipcode-cli.svg
    :target: https://img.shields.io/pypi/l/pyzipcode-cli.svg
 .. |Python Versions| image:: https://img.shields.io/pypi/pyversions/pyzipcode-cli.svg
-.. |Build Status| image:: https://travis-ci.org/prodicus/pyzipcode-cli.svg?branch=master
-.. |Requirements Status| image:: https://requires.io/github/prodicus/pyzipcode-cli/requirements.svg?branch=master
-   :target: https://requires.io/github/prodicus/pyzipcode-cli/requirements/?branch=master
+.. |Build Status| image:: https://travis-ci.org/tasdikrahman/pyzipcode-cli.svg?branch=master
+.. |Requirements Status| image:: https://requires.io/github/tasdikrahman/pyzipcode-cli/requirements.svg?branch=master
+   :target: https://requires.io/github/tasdikrahman/pyzipcode-cli/requirements/?branch=master
    :alt: Requirements Status

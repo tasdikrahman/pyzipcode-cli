@@ -77,7 +77,7 @@ class Pyzipcode(object):
 
         :param pincode: pincode for the place
         :param country_code: country code for the pincode. You can find the list of country codes in 
-                             "https://github.com/prodicus/pyzipcode-cli/blob/master/pyzipcode_cli/countries.json"
+                             "https://github.com/tasdikrahman/pyzipcode-cli/blob/master/pyzipcode_cli/countries.json"
         :returns: A unified result of both ziptastic and google maps API
         """
 
