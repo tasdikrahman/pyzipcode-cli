@@ -156,6 +156,21 @@ License :
 
 You can find a copy of the License at http://prodicus.mit-license.org/
 
+Donation
+--------
+
+If you have found my little bits of software being of any use to you, do consider helping me pay my internet bills :)
+
+
+|Paypal badge|
+
+|Instamojo|
+
+|gratipay|
+
+|patreon|
+
+
 .. |PyPI version| image:: https://badge.fury.io/py/pyzipcode-cli.svg
    :target: https://badge.fury.io/py/pyzipcode-cli
 .. |License| image:: https://img.shields.io/pypi/l/pyzipcode-cli.svg
@@ -165,3 +180,11 @@ You can find a copy of the License at http://prodicus.mit-license.org/
 .. |Requirements Status| image:: https://requires.io/github/tasdikrahman/pyzipcode-cli/requirements.svg?branch=master
    :target: https://requires.io/github/tasdikrahman/pyzipcode-cli/requirements/?branch=master
    :alt: Requirements Status
+.. |Paypal badge| image:: https://www.paypalobjects.com/webstatic/mktg/logo/AM_mc_vs_dc_ae.jpg
+   :target: https://www.paypal.me/tasdik
+.. |gratipay| image:: https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png
+   :target: https://gratipay.com/tasdikrahman/
+.. |Instamojo| image:: https://www.soldermall.com/images/pic-online-payment.jpg
+   :target: https://www.instamojo.com/@tasdikrahman
+.. |patreon| image:: http://i.imgur.com/ICWPFOs.png
+   :target: https://www.patreon.com/tasdikrahman/
