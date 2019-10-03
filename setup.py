@@ -15,7 +15,7 @@ setup(
   url = 'https://github.com/tasdikrahman/pyzipcode-cli', 
   license = 'MIT',
   install_requires = [
-    "requests==2.9.1"
+    "requests==2.20.0"
   ],
   ### adding package data to it 
   packages=find_packages(exclude=['contrib', 'docs']),
